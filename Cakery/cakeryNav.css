@@ -1,0 +1,18 @@
+.cakeryNav {
+    background-color: aquamarine;
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.cakeryfoot {
+    background-color: orange;
+    justify-self: center;
+    height: 250px;
+    width: 75%;
+    padding: 20px;
+}
+
+.cakeryfoot .social {
+    text-align: center;
+}
