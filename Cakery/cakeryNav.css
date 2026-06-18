@@ -1,7 +1,8 @@
 .cakeryNav {
+    justify-self: center;
     background-color: aquamarine;
     display: flex;
-    width: 20%;
+    width: 60%;
     justify-content: space-around;
 }
 
