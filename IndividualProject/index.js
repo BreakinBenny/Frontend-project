@@ -50,16 +50,17 @@ function filterToSport() {
     .then(response => response.json())
     .then(data => {
         let filterSport = prompt("What sport do you want to filter to? (Snooker, football, tennis...)").toUpperCase().trim();
+        document.getElementById("mainTable").hidden = true;
         let filteredtableData = data;
         const FilteredTable = document.getElementById("otherTableDB");
         data.forEach(filteredtableData => {
-            if (filteredtableData.sport != filterSport) {
-                console.log("Item's sport doesn't match, skipping...");
+            if (filteredtableData.sport == filterSport)
+                console.log("Item's sport matches filter, adding...");
+            else
                 return;
-            }
             const filteredTableRow = document.createElement("tr");
 
-          filteredTableRow.innerHTML = `
+            filteredTableRow.innerHTML = `
                 <td>${filteredtableData.id} (${filteredtableData.objectId})</td>
                 <!-- <td>${filteredtableData.name}</td> -->
                 <td>${filteredtableData.createdAt}</td>
@@ -71,10 +72,11 @@ function filterToSport() {
                 <td>${filteredtableData.state}</td>
             `;
 
+            FilteredTable.appendChild(filteredTableRow);
         });
         //filteredtableData = filteredtableData.filter(checkSport);
-        console.log(filteredtableData);
-        console.dir(otherTableDB);
+        //console.log(filteredtableData);
+        //console.dir(otherTableDB);
 
 
         //const OtherTableHeader = createElement("thead");

@@ -10,7 +10,7 @@
 
         <div style="justify-items: center; background-color: rgb(0, 150, 0); height: 100%;">
             <h2>⚽️ SPORTS POLL 🎾</h2>
-            <table style="background-color: lightgray;" border="5">
+            <table id="mainTable" style="background-color: lightgray;" border="5">
                 <thead><tr>
                     <th>Event ID (+ Object ID)</th>
                     <!-- <th>Matchup</th> -->
@@ -34,13 +34,7 @@
                         <td>dslöfkjdsf</td> -->
                 </tbody>
             </table>
-
-            <div style="justify-content: center;">
-                <button onclick="">PLACE YOUR BETS</button>
-                <button onclick="">PLACE YOUR BETS</button>
-                <button onclick=filterToSport()>Filter to another sport</button>
-            </div>
-            <table id="otherTable" style="background-color:aquamarine; border: 2px solid yellow; padding: 5px;" border="5" /*hidden*/>
+            <table id="otherTable" style="background-color:aquamarine; border: 2px solid yellow; padding: 5px;" border="5" hidden>
                 <thead><tr>
                     <th>Event ID (+ Object ID)</th>
                     <th>Time of Event</th>
@@ -55,6 +49,12 @@
 
                 </tbody>
             </table>
+
+            <div style="justify-content: center;">
+                <button onclick="">PLACE YOUR BETS</button>
+                <button onclick="">PLACE YOUR BETS</button>
+                <button onclick=filterToSport()>Filter to another sport</button>
+            </div>
         </div>
 
         <script src="index.js"></script>
