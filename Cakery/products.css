@@ -14,7 +14,8 @@
 */  /* height: 150px; */
     height: auto;
     /* width: 150px; */
-    width: 43%;
+    font-size: 80%;
+    width: 45%;
     background-color: #808080;
 }
 
@@ -24,19 +25,20 @@
     border-color: blue;
     /* height: 150px; */
     height: auto;
+    font-size: 80%;
     /* width: 150px; */
-    width: 43%;
+    width: 45%;
     background-color: rgb(230, 230, 230);
 }
 
 .cupcakeitem {
     border: 5px;
-    font-size: large;
+    font-size: medium;
     
 }
 .weddingcakeitem {
     border: 5px;
-    font-size: large;
+    font-size: medium;
 
 }
 
@@ -48,10 +50,4 @@ img {
     border-color: white;
     border-style: solid;
     border-width: 3px;
-}
-
-.h1 {
-    font-family: 'Roboto', system-ui;
-    font-weight: 400;
-    font-style: normal;
 }
